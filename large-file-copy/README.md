@@ -16,6 +16,42 @@ The key benefits of using optimized streaming, especially in serverless function
 - ⚙️ **Resource Management**: Better utilization of system resources
 - 💰 **Cost Optimization**: Lower memory usage translates to reduced costs in cloud environments
 
+## 🚀 How to Run?
+
+### Prerequisites
+
+- 🐹 **Go 1.24.3** or higher installed
+- 🌐 **Internet connection** to download the test file
+
+### Running the Applications
+
+#### Unoptimized Version
+
+```bash
+go run cmd/unoptimized_way/unoptimized_way.go
+```
+
+#### Optimized Version
+
+```bash
+go run cmd/optimized_way/optimized_way.go
+```
+
+### Expected Output
+
+Both applications will:
+
+- 🖥️ Start an HTTP server on port 8080
+- 📊 Display memory statistics before operations
+- ⏱️ Show execution time for file processing
+- 📈 Display memory statistics after operations
+
+### Testing the Applications
+
+1. 🌐 Open your browser and navigate to `http://localhost:8080`
+2. 📥 The server will download a 500MB test file and serve it
+3. 📊 Monitor the terminal output for memory usage and timing information
+
 ## 🔧 Method
 
 The program implements two different approaches for serving large files via HTTP:
